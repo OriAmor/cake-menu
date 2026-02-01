@@ -1,45 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mn">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Restaurant Menu</title>
+  <title>Ori Amor - Шинэхэн гар хийцийн бялуу</title>
+  
+  <!-- Favicon: Upload your logo as favicon.png or .ico to root -->
+  <!-- <link rel="icon" type="image/png" href="/favicon.png"> -->
+  
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+  
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; background: #f9f9f9; color: #333; }
-    h1 { text-align: center; color: #c0392b; }
-    .category { margin: 30px 0; }
-    .item { display: flex; justify-content: space-between; margin: 10px 0; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-    .price { font-weight: bold; color: #27ae60; }
-    img { max-width: 100%; height: auto; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background: #fff5f8; color: #333; line-height: 1.6; }
+    header { background: linear-gradient(to bottom, #ffb6c1, #ff69b4); color: white; text-align: center; padding: 50px 20px; }
+    h1 { margin: 0; font-size: 2.8em; }
+    .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+    .section { margin: 50px 0; }
+    .cake-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+    .cake-item { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 6px 15px rgba(0,0,0,0.1); text-align: center; padding-bottom: 15px; }
+    .cake-item img { width: 100%; height: 240px; object-fit: cover; }
+    .price { font-size: 1.4em; color: #e91e63; font-weight: bold; margin: 12px 0; }
+    .contact { text-align: center; background: #ffebee; padding: 30px; border-radius: 16px; margin: 40px 0; }
+    footer { text-align: center; padding: 25px; background: #ff69b4; color: white; }
+    .icon { font-size: 1.6em; vertical-align: middle; margin-right: 10px; color: #e91e63; }
+    a { color: #d81b60; text-decoration: none; font-weight: bold; }
+    a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Restaurant Menu</h1>
-  
-  <div class="category">
-    <h2>Appetizers</h2>
-    <div class="item">
-      <span>Spring Rolls (3 pcs)</span>
-      <span class="price">$4.99</span>
+
+  <header>
+    <h1>🍰 Ori Amor Bakery</h1>
+    <p>Шинэхэн гар хийцийн амттанаар таны өдрийг чимнэ ♥ Дулаахан амт хүргэж, аз жаргалын мөч бэлэглэнэ ✨</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Бидний тухай -->
+    <div class="section">
+      <h2><span class="material-symbols-outlined icon">cake</span> Бидний тухай</h2>
+      <p>Манай бялууны дэлгүүр нь шинэхэн гар хийцийн амттанаар таны өдрийг чимнэ. “Дулаахан амт”–ыг хүргэж, аз жаргалын мөч бэлэглэнэ.</p>
+      <p>Төрсөн өдөр, баяр ёслол, гэнэтийн бэлэгт зориулсан өхөөрдөм, шинэлэг загварууд бэлэн байна. Таны хүсэлтээр загвар, өнгө, амт тохируулна!</p>
+      <p><span class="material-symbols-outlined icon">location_on</span> Хаяг: Дунд гол гудамж Г60, Улаанбаатар хот, Хан Уул дүүрэг</p>
+      <p><span class="material-symbols-outlined icon">schedule</span> Үргэлж нээлттэй (Always open)</p>
     </div>
-    <div class="item">
-      <span>Chicken Wings</span>
-      <span class="price">$7.50</span>
+
+    <!-- Манай бялуунууд -->
+    <div class="section">
+      <h2><span class="material-symbols-outlined icon">photo_library</span> Манай бялуунууд</h2>
+      <div class="cake-grid">
+
+        <div class="cake-item">
+          <img src="https://media.gettyimages.com/id/868038262/video/looping-sparkler-on-tart.jpg?s=640x640&k=20&c=7FWBJ7UUELKRk3vcgc0PYFVXpf6FpOnm_zSjaRxhaFE=" alt="Гал асдаг бялуу">
+          <h3>Гал асдаг тренд бялуу 🔥</h3>
+          <p class="price">Захиалгаар</p>
+          <p>Шинэлэг өнгө, өвөрмөц загвартай. Төрсөн өдөрт төгс тохирно. Гал асдаг тусгай цаастай – мартагдашгүй дурсамж үлдээнэ ✨</p>
+        </div>
+
+        <div class="cake-item">
+          <img src="https://media.craiyon.com/2025-08-14/p9_DMavTRUiIOcwCiEBbDg.webp" alt="Ягаан пастель бялуу">
+          <h3>Pink Cake 💗</h3>
+          <p class="price">Захиалгаар</p>
+          <p>Пастель ягаан өнгөтэй, өхөөрдөм, тансаг загвартай. Зөөлөн кремтэй, үдэшлэгт тохиромжтой. Хайртай хүндээ бэлэглэхэд гайхалтай!</p>
+        </div>
+
+        <div class="cake-item">
+          <img src="https://www.justonecookbook.com/wp-content/uploads/2017/06/Strawberry-Shortcake-722.jpg" alt="Гүзээлзгэнэтэй бялуу">
+          <h3>Strawberry Kiss Cake 🍓</h3>
+          <p class="price">Захиалгаар</p>
+          <p>Шинэхэн гүзээлзгэнэний амттай, зөөлөн торгомсог кремтэй. Намуухан, дурлам өнгөтэй – хайртай хүнд бэлэглэхэд тохиромжтой.</p>
+        </div>
+
+        <div class="cake-item">
+          <img src="https://en.cooking-tree.com/wp-content/uploads/2022/10/No-Bake-Oreo-Blueberry-Cheesecake-56-1024x576.jpg" alt="Нэрс Oreo бялуу">
+          <h3>Blueberry Oreo Cake 🫐</h3>
+          <p class="price">Захиалгаар</p>
+          <p>Нэрсний сэрүүн амт + Oreo-гийн бялаг хослол. Хөнгөн, минимал чимэглэлтэй – зураг авахад гоё харагдана. Бүх насанд таалагдана!</p>
+        </div>
+
+        <!-- Нэмэлт бялуу нэмэх бол энд давхардуулж хуул -->
+
+      </div>
     </div>
+
+    <!-- Захиалах -->
+    <div class="contact section">
+      <h2><span class="material-symbols-outlined icon">chat</span> Захиалга өгөх</h2>
+      <p>Яг одоо чат бичээд зөвлөгөө авч, бялуугаа эрт захиалаарай! 💌</p>
+      <p><strong>Утас:</strong> +976 8520 0007</p>
+      <p><a href="https://www.facebook.com/profile.php?id=61579825677499" target="_blank">📩 Facebook Messenger-ээр чатлах</a></p>
+      <p><a href="https://www.instagram.com/ori.amor.bakery.mongolia" target="_blank">📸 Instagram: ori.amor.bakery.mongolia</a></p>
+      <p>Таны хүсэлтээр загвар өөрчилнө – баяр ёслолд төгс тохирсон бялуу бэлдэнэ ♥</p>
+    </div>
+
   </div>
-  
-  <div class="category">
-    <h2>Main Dishes</h2>
-    <div class="item">
-      <span>Beef Stir-Fry</span>
-      <span class="price">$12.99</span>
-    </div>
-    <!-- Add more items here -->
-  </div>
-  
-  <!-- Add photos if you have URLs or upload later -->
-  <!-- <img src="https://example.com/photo.jpg" alt="Dish photo"> -->
-  
-  <p style="text-align:center;">Open daily 11AM - 10PM | Location: Your City</p>
+
+  <footer>
+    <p>© Ori Amor Bakery Mongolia | Улаанбаатар | Аз жаргалтай мөч бэлэглэнэ ✨</p>
+  </footer>
+
 </body>
 </html>
